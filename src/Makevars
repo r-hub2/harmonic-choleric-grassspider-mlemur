@@ -1,0 +1,2 @@
+RhuCXX_STD = CXX17
+PKG_LIBS=$(PKG_LDFLAGS) -lmpfr -lgmp -lm -lc

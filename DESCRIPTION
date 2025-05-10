@@ -1,0 +1,33 @@
+Package: mlemur
+Type: Package
+Title: MLE MUtatution Rate Calculator
+Version: 0.9.6.5
+Date: 2023-05-09
+Authors@R: c(person("Krystian", "Lazowski", role = c("aut", "cre"),
+	           email = "lazowski.krystian@outlook.com", comment = c(ORCID="0000-0001-5163-7026")),
+	           person("Qi", "Zheng", role = "ctb", comment = "The code for simulating fluctuation experiments,
+	           calculating selected auxiliary sequences, the values of probability mass function, maximum likelihood
+	           estimates, confidence intervals, p-values, was inspired by the frameworks developed by Qi Zheng and
+	           implemented in rSalvador. The functions are referenced in documentation."))
+Author: Krystian Lazowski [aut, cre] (<https://orcid.org/0000-0001-5163-7026>),
+        Qi Zheng [ctb]
+Maintainer: Krystian Lazowski <klazowski@ibb.waw.pl>
+Description: A tool for calculating maximum likelihood-based mutation rates,
+  confidence intervals, and P values. Offers graphical user interface built with shiny.
+  Based on rSalvador by Qi Zheng <https://github.com/eeeeeric/rSalvador>.
+  This project was supported by National Science Centre, Poland (PRELUDIUM Grant 2019/35/N/NZ1/03402).
+License: GPL (>= 2)
+SystemRequirements: gmp (>=6.2.1), mpfr (>=4.1.0)
+SystemRequirementsNote: 'MPFR' (MP Floating-Point Reliable Library,
+        https://www.mpfr.org/) and 'GMP' (GNU Multiple Precision
+        library, https://gmplib.org/), see >> README.md
+Depends: R (>= 4.1.0), shiny
+Imports: Rcpp (>= 1.0.9), stats, utils, shinyFeedback, shinyWidgets,
+        shinyjqui, shinyjs, writexl, readxl, clipr, reactable, Ryacas,
+        boot
+LinkingTo: Rcpp, BH
+RoxygenNote: 7.3.2
+NeedsCompilation: yes
+StagedInstall: no
+Encoding: UTF-8
+Packaged: 2025-05-10 22:46:13 UTC; krystian
